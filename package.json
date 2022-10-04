@@ -1,0 +1,20 @@
+{
+  "name": "this-weekend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "search.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "search.php"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterwMcClelland/This-Weekend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterwMcClelland/This-Weekend/issues"
+  },
+  "homepage": "https://github.com/PeterwMcClelland/This-Weekend#readme"
+}
