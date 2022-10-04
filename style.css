@@ -1,4 +1,4 @@
-* {
+  * {
     box-sizing: border-box;
   }
   
@@ -18,11 +18,6 @@
     padding: 0;
     margin: 0;
   }
-
-  p {
-    font-size: 15px;
-    font-style: italic;
-  }
   
   #myUL li a {
     border: 1px solid #ddd;
@@ -32,9 +27,14 @@
     text-decoration: none;
     font-size: 18px;
     color: black;
-    display: list-item
+    display: block
   }
   
   #myUL li a:hover:not(.header) {
     background-color: #eee;
+  }
+
+  p {
+      display: inline-flex;
+      font-style: italic;
   }
