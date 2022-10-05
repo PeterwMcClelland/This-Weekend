@@ -2,6 +2,10 @@
     box-sizing: border-box;
   }
 
+  .header {
+    text-align: center;
+  }
+
   h2 {
       text-align: center;
   }
@@ -41,4 +45,31 @@
   p {
       display: inline-flex;
       font-style: italic;
+  }
+
+  /* Spot Card */
+  .column1 {
+    float: left;
+    width: 40%;
+  }
+
+  .column2 {
+      float: right;
+      width: 60%;
+  }
+
+  h2 {
+    text-align: left;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .img {
+    max-width: 75%;  
+    height: auto;  
   }

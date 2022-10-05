@@ -5,28 +5,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>This Weekend</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./assests/style.css" />
     </head>
     <body>
     <header>
-        <h2>This Weekend</h2>
+        <h2 class="header">This Weekend</h2>
         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Spot, Spot Type, Area.." title="Type in a name">
     </header>
 
     <ul id="myUL">
           <li><a href="#spotone">Spot One <p>|| Ledge</p> <p>|| Industrial</p></a></li>
-          <li><a href="#parkblocks">Park Blocks <p> || Stairs </p> <p> || Downtown Portland</p></a></li>
+          <li><a href="./index.html#parkblocks">Park Blocks <p> || Stairs </p> <p> || Downtown Portland</p></a></li>
           <li><a href="#halfcurcle">Half Curcle <p> || Ledge, Manual</p> <p>|| Downtown Portland</p></a></li>
-          <li><a href="#beavertonpark">Beaverton Park (Tron) <p>|| Skate Park </p> <p>|| Beaverton, OR</p></a></li>
+          <li><a href="./index.html#beavertonpark">Beaverton Skatepark (Tron) <p>|| Skate Park </p> <p>|| Beaverton, OR</p></a></li>
           <li><a href="#">spot<p>|| </p> <p>|| area</p></a></li>
         </ul>
 
-        <div>
-            <h2>Spot One</h2>
+        <div class="spotcard">
+            <h2 id="parkblocks">Park Blocks</h2>
+            <div class="row">
+                <div class="column1">
+                    <ul>
+                        <li>9 stair</li>
+                        <li>Security Level: Medium</li>
+                        <li>Location: 1000 SW Park Ave, Portland, Oregon</li>
+                    </ul>
+                </div>
+                <div class="column2">
+                    <img class="img" src="./assests/images/ParkBlocks.jpeg" alt="Park Blocks">
+                </div>
+              </div>
+
+              <h2 id="beavertonpark">Beaverton Park (Tron)</h2>
+            <div class="row">
+                <div class="column1">
+                    <ul>
+                        <li>Skatepark: Vert/Street</li>
+                        <li>Location: NW Schlottman Pl, Beaverton, OR 97006</li>
+                        <li>Lights: Yes</li>
+                    </ul>
+                </div>
+                <div class="column2">
+                    <img class="img" src="./assests/images/beavertonpark.jpeg" alt="Beaverton Park">
+                </div>
+              </div>
+        
         </div>
 
 
     
-        <script src="index.js"></script>
+        <script src="./assests/index.js"></script>
     </body>
 </html>
