@@ -2,12 +2,16 @@
     box-sizing: border-box;
   }
 
+  body {
+    background-image: url(../assests/images/Portland-Oregon_iS_994318522_web.jpeg);
+  }
 
   .header {
     background-color: antiquewhite;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1;
   }
 
   .header-text {
@@ -18,7 +22,13 @@
       text-align: center;
       margin: 0px 15px 0px 15px;
       padding: 15px;
-      font-family: Linebeam;
+      font-family: monospace;
+  }
+
+  .map {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
   }
   
   body {
@@ -96,11 +106,13 @@
   .row {
     border: 1px solid gray;
     border-radius: 10px;
-    background-color: lightgray;
+    background-color:  lightgray;
     margin: 0px 15px 0px 15px;
+    opacity: .8;
   }
 
   .img {
     max-width: 75%;  
     height: auto;  
   }
+
