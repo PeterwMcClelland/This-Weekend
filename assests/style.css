@@ -17,6 +17,15 @@
     z-index: 1;
   }
 
+  .a-header {
+    text-decoration: none;
+    color: black;
+  }
+
+  .a-ultext {
+    font-size: x-large;
+  }
+
   .header-text {
     text-align: center;
   }
@@ -34,6 +43,11 @@
     background-color: antiquewhite;
     margin: 0px;
     
+  }
+
+  .searchli {
+    font-size: xx-large;
+    padding: 0px;
   }
 
   #myInput {
@@ -55,7 +69,9 @@
     margin: 0;
     border-radius: 10px;
     padding: 0px 15px;
+    font-family: monospace;
     opacity: .8;
+    text-align: center;
   }
   
   #myUL li a {
@@ -71,6 +87,7 @@
   
   #myUL li a:hover:not(.header) {
     background-color: #eee;
+    font-size:x-large ;
   }
 
   p {
@@ -82,6 +99,18 @@
   .column1 {
     float: left;
     width: 40%;
+    font-family: monospace;
+  }
+
+  li {
+    font-size: x-large;
+    padding: 8px;
+  }
+
+
+
+  ul {
+    font-size: xx-large;
   }
 
   .column2 {
