@@ -10,6 +10,7 @@
     background-color: antiquewhite;
     margin: 0px;
   }
+  
 
   .header {
     background-color: rgb(197, 192, 192);
@@ -17,6 +18,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 10px;
   }
 
   .a-header {
@@ -38,8 +40,13 @@
       padding: 15px;
       font-family: monospace;
       font-size: xxx-large;
+  
   } 
   
+  .signup-login {
+    float: right;
+    text-decoration: none;
+  }
 
   .searchli {
     font-size: xx-large;
@@ -52,7 +59,7 @@
     background-repeat: no-repeat;
     width: 30%;
     font-size: 16px;
-    padding: 12px 20px 12px 40px;
+    padding: 12px -5px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
     margin-left: 40px;
@@ -62,7 +69,7 @@
   #myUL {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: -9px;
     border-radius: 10px;
     padding: 0px 15px;
     font-family: monospace;
@@ -100,8 +107,154 @@
   .login {
     display: inline;
     float: right;
-    padding-right: 25px;
+    padding-right: 35px;
   }
+
+  .signupbutton {
+    background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  float: right;
+  text-decoration: none;
+  float: right;
+    padding-right: 15px;
+  }
+
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  float: right;
+  text-decoration: none;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  float: right;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
 
   /* Spot Card */
   .column1 {
@@ -119,6 +272,7 @@
 
   ul {
     font-size: xx-large;
+    list-style-type: none;
   }
 
   .column2 {
