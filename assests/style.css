@@ -18,7 +18,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    padding-top: 10px;
+    padding: 10px;
   }
 
   .a-header {
@@ -43,6 +43,10 @@
   
   } 
   
+  .signup-login {
+    float: right;
+    text-decoration: none;
+  }
 
   .searchli {
     font-size: xx-large;
@@ -106,6 +110,20 @@
     padding-right: 35px;
   }
 
+  .signupbutton {
+    background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  float: right;
+  text-decoration: none;
+  float: right;
+    padding-right: 15px;
+  }
+
   /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -126,6 +144,7 @@ input[type=text], input[type=password] {
   cursor: pointer;
   width: 100%;
   float: right;
+  text-decoration: none;
 }
 
 button {
@@ -253,6 +272,7 @@ span.psw {
 
   ul {
     font-size: xx-large;
+    list-style-type: none;
   }
 
   .column2 {
