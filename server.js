@@ -70,7 +70,7 @@ app.post('/register', encodeUrl, (req, res) => {
                 </head>
                 <body>
                     <div class="container">
-                        <h3>Hi, ${req.session.user.firstname} ${req.session.user.lastname}</h3>
+                        <h3>Hello, ${req.session.user.firstname} ${req.session.user.lastname}</h3>
                         <a href="/">Log out</a>
                     </div>
                 </body>
@@ -96,7 +96,7 @@ app.post('/register', encodeUrl, (req, res) => {
 
 });
 
-app.get("/login", (req, res)=>{
+app.get("/assets/Pages/login.html", (req, res)=>{
     res.sendFile(__dirname + "/login.html");
 });
 
