@@ -2,6 +2,7 @@ const express = require("express")
 const app = express()
 const mysql = require("mysql")
 
+
 require("dotenv").config()
 const DB_HOST = process.env.DB_HOST
 const DB_USER = process.env.DB_USER
@@ -24,17 +25,22 @@ app.listen(port,
 
 const bcrypt = require("bcrypt")
 app.use(express.json())
+
+
+
 //middleware to read req.body.<params>
 //CREATE USER
 app.post("/createUser", async (req,res) => {
 const user = req.body.name;
 const hashedPassword = await bcrypt.hash(req.body.password,10);
+
 db.getConnection( async (err, connection) => {
  if (err) throw (err)
  const sqlSearch = "SELECT * FROM userTable WHERE user = ?"
  const search_query = mysql.format(sqlSearch,[user])
  const sqlInsert = "INSERT INTO userTable VALUES (0,?,?)"
  const insert_query = mysql.format(sqlInsert,[user, hashedPassword])
+
  // ? will be replaced by values
  // ?? will be replaced by string
  await connection.query (search_query, async (err, result) => {
@@ -46,6 +52,7 @@ db.getConnection( async (err, connection) => {
    console.log("------> User already exists")
    res.sendStatus(409) 
   } 
+
   else {
    await connection.query (insert_query, (err, result)=> {
    connection.release()
@@ -63,7 +70,7 @@ db.getConnection( async (err, connection) => {
 
 
 //LOGIN (AUTHENTICATE USER)
-app.post("/login", (req, res)=> {
+app.post("/login", (req, res)=> { 
    const user = req.body.name
    const password = req.body.password
    db.getConnection ( async (err, connection)=> {
@@ -91,9 +98,10 @@ app.post("/login", (req, res)=> {
        } //end of bcrypt.compare(
      }//end of User exists i.e. results.length==0
     }) //end of connection.query()
+
    }) //end of db.connection()
    }) //end of app.post()
 
-
+  
 
 
