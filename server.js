@@ -5,6 +5,8 @@ const http = require('http');
 var parseUrl = require('body-parser');
 const app = express();
 
+const userName = (userName) => `userName: ${req.session.user.firstname} ${req.session.user.lastname}`;
+
 var mysql = require('mysql');
 const { encode } = require('punycode');
 
@@ -22,13 +24,13 @@ app.use(cookieParser());
 
 var con = mysql.createConnection({
     host: "localhost",
-    user: "root", // my username
-    password: "password", // my password
+    user: "root", 
+    password: "password", 
     database: "myform"
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/assets/Pages/register.html');
+    res.sendFile(__dirname + '/register.html');
 })
 
 app.post('/register', encodeUrl, (req, res) => {
@@ -70,11 +72,10 @@ app.post('/register', encodeUrl, (req, res) => {
                 </head>
                 <body>
                     <div class="container">
-                        <h3>Hello, ${req.session.user.firstname} ${req.session.user.lastname}</h3>
+                    <h3>Hello, ${req.session.user.firstname} ${req.session.user.lastname}</h3>
                         <a href="/">Log out</a>
                     </div>
                 </body>
-                </html>
                 `);
             }
                 // inserting new user data
@@ -96,7 +97,7 @@ app.post('/register', encodeUrl, (req, res) => {
 
 });
 
-app.get("/assets/Pages/login.html", (req, res)=>{
+app.get("/login", (req, res)=>{
     res.sendFile(__dirname + "/login.html");
 });
 
@@ -113,6 +114,7 @@ app.post("/dashboard", encodeUrl, (req, res)=>{
             console.log(err);
           };
 
+
           function userPage(){
             // We create a session for the dashboard (user page) page and save the user data to this session:
             req.session.user = {
@@ -123,22 +125,23 @@ app.post("/dashboard", encodeUrl, (req, res)=>{
             };
 
             res.send(`
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <title>Login and register form with Node.js, Express.js and MySQL</title>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-            </head>
-            <body>
-                <div class="container">
-                    <h3>Hi, ${req.session.user.firstname} ${req.session.user.lastname}</h3>
-                    <a href="/">Log out</a>
-                </div>
-            </body>
-            </html>
-            `);
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <title>Login and register form with Node.js, Express.js and MySQL</title>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <div class="container">
+                        <h3>Hi, ${req.session.user.firstname} ${req.session.user.lastname}</h3>
+                        <a href="/">Log out</a>
+                    </div>
+                </body>
+                </html>
+                `
+                );
         }
 
         if(Object.keys(result).length > 0){
@@ -150,6 +153,8 @@ app.post("/dashboard", encodeUrl, (req, res)=>{
         });
     });
 });
+
+
 
 app.listen(3000, ()=>{
     console.log("Server running on port 3000");

@@ -9,18 +9,14 @@
         <script src="https://kit.fontawesome.com/2270eba366.js" crossorigin="anonymous"></script>
     </head>
 <header class="header">
-    <script>
-        `<h3>Hi, ${req.session.user.firstname} ${req.session.user.lastname}</h3>`
-    </script>
-
+    
+<p id="username" onclick="">Username</p>
         <h1 id="home"  class="header-text"><a class="a-header" href="index.html">This Weekend</a></h1>
         <input type="text" id="myInput" name="txtbox" onkeyup="searchli()" placeholder="Spot, Spot Type, Area.." title="Type in a name">
         <div class="signup-login">
-        <button class="button" style="width:auto;"><a href="./assets/Pages/login.html">Login</a></button>
-        <p><a href="./assets/Pages/register.html">Sign Up</a></p>
+        <button class="button" style="width:auto;"><a href="login.html">Login</a></button>
+        <p><a href="./register.html">Sign Up</a></p>
 
-        
-    
     </div>
 
 <div id="id01" class="modal">
