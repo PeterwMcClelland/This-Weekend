@@ -136,6 +136,10 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
+#login-btn {
+  background-color: darkgreen;
+}
+
 /* Set a style for all buttons */
 .button {
   background-color: #04AA6D;
