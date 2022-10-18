@@ -5,8 +5,6 @@ const http = require('http');
 var parseUrl = require('body-parser');
 const app = express();
 
-const userName = (userName) => `userName: ${req.session.user.firstname} ${req.session.user.lastname}`;
-
 var mysql = require('mysql');
 const { encode } = require('punycode');
 
