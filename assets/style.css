@@ -19,7 +19,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    padding: 10px;
+    padding: 1px;
     border-bottom: solid 2px white;
   }
 
@@ -48,6 +48,7 @@
   .signup-login {
     float: right;
     display: inline-flex;
+    padding-right: 10px;
     text-decoration: none;
   }
 
@@ -143,15 +144,16 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 .button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin-right: 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  float: right;
-  text-decoration: none;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin-right: 9px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    float: right;
+    text-decoration: none;
 }
 
 button {
