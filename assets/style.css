@@ -316,6 +316,21 @@ span.psw {
     border: 1px solid white;
   }
 
+/* Comment Box */
 
+.comment {
+  width: 70%;
+  display: flex;
+  height: 70px;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  color: #9d9d9d;
+}
+
+.divcomment {
+  display: flow-root;
+    text-align: -webkit-center;
+}
  
 
