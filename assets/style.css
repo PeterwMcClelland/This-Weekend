@@ -53,6 +53,16 @@
     text-decoration: none;
   }
 
+  .login-txt {
+    text-decoration: none;
+    color: white;
+  }
+
+  .signup-txt {
+    text-decoration: underline;
+    color: black;
+  }
+
   .searchli {
     font-size: xx-large;
     padding: 0px;
