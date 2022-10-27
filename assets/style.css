@@ -60,6 +60,11 @@
     color: white;
   }
 
+  .fa-solid, .fas {
+    font-weight: 900;
+    padding-right: 5px;
+}
+
   .signup-txt {
     text-decoration: underline;
     color: black;
