@@ -18,7 +18,9 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    font-family: monospace;
     z-index: 1;
+    font-size: x-large;
     padding: 1px;
     border-bottom: solid 2px white;
   }
@@ -61,6 +63,8 @@
   .signup-txt {
     text-decoration: underline;
     color: black;
+    font-family: ui-serif;
+    font-size: small;
   }
 
   .searchli {
@@ -335,7 +339,7 @@ span.psw {
   height: 70px;
   padding: 10px;
   margin-top: 30px;
-  background-color: #c4c3c3;
+  background-color: #dcdcdc;
   color: #000000;
   border-radius: 8px;
 }
