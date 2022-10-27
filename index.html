@@ -26,9 +26,9 @@
           <li class="searchli"><a href="./index.html#spotone">Spot One <p>|| Ledge</p> <p>|| Industrial</p></a></li>
           <li class="searchli"><a href="./index.html#parkblocks">Park Blocks <p> || Stairs </p> <p> || Downtown Portland</p></a></li>
           <li class="searchli"><a href="./index.html#HalfCircle">Half Curcle <p> || Ledge & Manual</p> <p>|| Downtown Portland</p></a></li>
-          <li class="searchli"><a href="./index.html#beavertonpark">Beaverton Skatepark (Tron) <p>|| Skate Park </p> <p>|| Beaverton, OR</p></a></li>
+          <li class="searchli"><a href="./index.html#beavertonpark">Beaverton Skatepark (Tron) <p>|| SkatePark </p> <p>|| Beaverton, OR</p></a></li>
           <li class="searchli"><a href="./index.html#calspharmacy">Cal's Pharmacy <p>|| Skate Shop</p> <p>|| East Portland</p></a></li>
-          <li class="searchli"><a href="./index.html#commonwealth">Common Wealth <p>|| Skate Park & Skate Shop</p> <p>|| East Portland</p></a></li>
+          <li class="searchli"><a href="./index.html#commonwealth">Common Wealth <p>|| SkatePark & Skate Shop</p> <p>|| East Portland</p></a></li>
           <li class="searchli"><a href="./index.html#shrunkenhead">Shrunken Head <p>|| Skate Shop</p> <p>|| East Portland</p></a></li>
           <li class="searchli"><a href="./index.html#savierbump">Savier Bump<p>|| Bump</p> <p>|| East Portland</p></a></li>
           <li class="searchli"><a href="./index.html#catspaw">Cats Paw<p>|| Bar</p> <p>|| Southeast Portland</p></a></li>
@@ -37,7 +37,7 @@
           <li class="searchli"><a href="./index.html#rockmanny">Rock Manny<p>|| Manual Pad</p> <p>|| SouthWest Portland</p></a></li>
           <li class="searchli"><a href="./index.html#waterfronthubba">Waterfront Hubba<p>|| Hubba</p> <p>|| SouthWest Portland</p></a></li>
           <li class="searchli"><a href="./index.html#lafitness">LA Fitness Rail<p>|| Rail</p> <p>|| Portland</p></a></li>
-          <li></li>
+          <li class="searchli"><a href="./index.html#burnside">Burnside<p>|| Skatepark</p> <p>|| SouthEast Portland</p></a></li>
         </ul>
 
         <div class="spotcard">
@@ -73,19 +73,13 @@
                         <li>Lights: Yes</li>
                     </ul>
 
-                    <div id="main-content">
-                        <div id="make-comment">
-                            <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input style="width:250px;" class="form-control" type="text" id="name" Required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Type Comment Below!</label>
-                                <textarea class="form-control" id="message" Required></textarea>
-                            </div>
-                            <button type="button" class="btn btn-success" onclick="insertComment()">Comment!</button>
+                    <div class="divcomment">
+                        <form action="/form/submit" method="POST">
+                            <textarea class="comment" placeholder="Place Comment Here..."></textarea>
+                            <br>
+                            <input type="submit" name="submit" value="Send">
+                          </form>
                         </div>
-                    </div>
 
                 </div>
                 <div class="column2">
@@ -344,17 +338,16 @@
         
         </div>
 
-        <h2 id=""></h2>
+        <h2 id="burnside">Burnside</h2>
         <div class="row">
             <div class="column1">
                 <ul>
-                    <li></li>
-                    <li> </li>
-                    <li>Location: </li>
+                    <li>Iconic DIY Skatepark</li>
+                    <li>Location: SE 2nd Ave, Portland, OR 97232</li>
                 </ul>
 
                 <div class="divcomment">
-                    <form action="/form/submit" method="POST">
+                    <form action="./assets/js/comments.js" method="POST">
                         <textarea class="comment" placeholder="Place Comment Here..."></textarea>
                         <br>
                         <input type="submit" name="submit" value="Send">
@@ -363,7 +356,7 @@
 
             </div>
             <div class="column2">
-                <img class="img" src="" alt="">
+                <img class="img" src="./assets/images/Burnside.png" alt="Burnside Skatepark">
             </div>
           </div>
     
@@ -371,5 +364,6 @@
 
         <script src="./assests/js/server.js"></script>
         <script src="./assets/js/search.js"></script>
+        <script src="./assets/js/comments.js"></script>
     </body>
 </html>
