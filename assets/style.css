@@ -5,7 +5,7 @@
   body {
     background-image: url(../assets/images/Screen\ Shot\ 2022-10-07\ at\ 5.09.50\ PM.png);
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-color: antiquewhite;
     margin: 0px;
