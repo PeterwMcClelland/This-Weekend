@@ -9,6 +9,12 @@ This is a site to help navigate Portland, OR skate spots around the city.
 ## Built with
 HTML, CSS, Javascript.
 
+## Deployed site & Repo
+
+Site: https://peterwmcclelland.github.io/This-Weekend/
+
+Repo: https://github.com/PeterwMcClelland/This-Weekend
+
 ## Contributers
 Mario Zucca, Background Illustration.
 
